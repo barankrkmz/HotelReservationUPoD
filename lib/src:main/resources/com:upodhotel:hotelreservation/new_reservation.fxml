@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="800.0"
+            style="-fx-background-color: #01844f;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="com.upodotel.hotelreservation.controllers.NewReservationController">
+    <children>
+        <Label layoutX="69.0" layoutY="131.0" text="Room:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="31.0" text="Create New Reservation" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="36.0"/>
+            </font>
+        </Label>
+        <Label layoutX="69.0" layoutY="194.0" text="Customers:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btn_save" layoutX="609.0" layoutY="434.0" mnemonicParsing="false" prefHeight="43.0"
+                prefWidth="130.0" text="Save Reservation" textAlignment="CENTER" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_cancel" layoutX="465.0" layoutY="434.0" mnemonicParsing="false" prefHeight="43.0"
+                prefWidth="116.0" text="Cancel" textAlignment="CENTER" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+        <Label layoutX="69.0" layoutY="307.0" text="Check-Out Date:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <DatePicker fx:id="dp_check_in_date" layoutX="213.0" layoutY="248.0" prefHeight="26.0" prefWidth="150.0"/>
+        <MenuButton fx:id="mb_select_customers" layoutX="213.0" layoutY="192.0" mnemonicParsing="false"
+                    prefHeight="26.0" prefWidth="226.0" text="Select Customers"/>
+        <Label layoutX="69.0" layoutY="250.0" text="Check-In Date:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <DatePicker fx:id="dp_check_out_date" layoutX="213.0" layoutY="305.0" prefHeight="26.0" prefWidth="150.0"/>
+        <Label layoutX="69.0" layoutY="362.0" text="Checked-In:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="68.0" layoutY="412.0" text="Checked-Out:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <ChoiceBox fx:id="cb_checked_in" layoutX="213.0" layoutY="359.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="cb_checked_out" layoutX="213.0" layoutY="410.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="cb_select_room" layoutX="213.0" layoutY="129.0" prefHeight="26.0" prefWidth="225.0"/>
+        <Label layoutX="533.0" layoutY="131.0" text="Services:" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="18.0"/>
+            </font>
+        </Label>
+        <Pane fx:id="pane_services" layoutX="509.0" layoutY="165.0" prefHeight="259.0" prefWidth="256.0"/>
+    </children>
+</AnchorPane>

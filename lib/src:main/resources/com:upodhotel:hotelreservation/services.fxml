@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="800.0"
+            style="-fx-background-color: #01844f;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            fx:controller="com.upodotel.hotelreservation.controllers.ServicesController">
+    <children>
+        <Label layoutX="328.0" layoutY="30.0" text="Services" textFill="WHITE">
+            <font>
+                <Font name="Rockwell" size="36.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="tv_service_table" layoutX="34.0" layoutY="92.0" prefHeight="316.0" prefWidth="732.0">
+            <columns>
+                <TableColumn fx:id="tc_service_name" prefWidth="353.5999984741211" text="Service Name"/>
+                <TableColumn fx:id="tc_unit_price" prefWidth="377.6000061035156" text="Unit Price"/>
+            </columns>
+        </TableView>
+        <Button fx:id="btn_new_service" layoutX="75.0" layoutY="434.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="126.0" text="New Service" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_edit_service" disable="true" layoutX="216.0" layoutY="434.0" mnemonicParsing="false"
+                prefHeight="26.0" prefWidth="126.0" text="Edit Service" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_return_reservations" layoutX="575.0" layoutY="434.0" mnemonicParsing="false"
+                prefHeight="26.0" prefWidth="150.0" text="Return Reservations" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btn_delete_service" disable="true" layoutX="359.0" layoutY="434.0" mnemonicParsing="false"
+                prefHeight="26.0" prefWidth="126.0" text="Delete Service" textFill="#01844f">
+            <font>
+                <Font name="Rockwell" size="14.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
